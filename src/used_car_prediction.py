@@ -276,7 +276,7 @@ def run_vehicle_price_prediction(
 
     scaler_scores = {}
 
-    print("\n=== Scaler Comparison (3-fold CV R²) ===")
+    print("\n=== Scaler Comparison (5-fold CV R²) ===")
 
     for scaler_name, scaler in scalers.items():
 
@@ -506,7 +506,7 @@ def run_vehicle_price_prediction(
     print(f"MAE  : {mae:.2f}")
     print(f"RMSE : {rmse:.2f}")
     print(f"R²   : {r2:.4f}")
-    print(f"MAPE : {mape:.4f}")
+    print(f"MAPE : {mape * 100:.2f}%")
 
     # =========================================================
     # Step 17: Price Gap Analysis
