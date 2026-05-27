@@ -330,7 +330,7 @@ def run_vehicle_price_prediction(
             pipeline,
             X_train,
             y_train,
-            cv=3,
+            cv=5,
             scoring="r2",
             n_jobs=-1
         )
@@ -454,7 +454,7 @@ def run_vehicle_price_prediction(
         estimator=final_pipeline,
         param_distributions=param_grid,
         n_iter=3,
-        cv=3,
+        cv=5,
         scoring="r2",
         random_state=42,
         n_jobs=-1
